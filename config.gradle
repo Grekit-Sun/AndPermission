@@ -14,10 +14,10 @@ ext {
 
     bintray = [version       : "2.0.4",
 
-               siteUrl       : 'https://github.com/yanzhenjie/AndPermission',
-               gitUrl        : 'https://github.com/yanzhenjie/AndPermission.git',
+               siteUrl       : 'https://github.com/Grekit-Sun/AndPermission',
+               gitUrl        : 'https://github.com/Grekit-Sun/AndPermission.git',
 
-               group         : "com.yanzhenjie",
+               group         : "com.github.Grekit-Sun",
 
                packaging     : 'aar',
                name          : 'Permission',
