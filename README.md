@@ -2,14 +2,14 @@
 1. Request for runtime permissions.  
 2. Share private files.  
 3. Request to install unknown source apk.  
-  `android.permission.REQUEST_INSTALL_PACKAGES`
+    `android.permission.REQUEST_INSTALL_PACKAGES`
 4. Request to draw at the top of other apps.  
-  `android.permission.SYSTEM_ALERT_WINDOW`
+    `android.permission.SYSTEM_ALERT_WINDOW`
 5. Request to show notifications.  
 6. Request to access notifications.  
-  `android.permission.BIND_NOTIFICATION_LISTENER_SERVICE`
+    `android.permission.BIND_NOTIFICATION_LISTENER_SERVICE`
 7. Request to modify system setting.  
-  `android.permission.WRITE_SETTINGS`
+    `android.permission.WRITE_SETTINGS`
 
 ```java
 AndPermission.with(this)
@@ -27,13 +27,26 @@ AndPermission.with(this)
 For documentation and additional information see [the website](https://yanzhenjie.com/AndPermission).
 
 ## Download
-It only supports androidx, add dependencies in your gradle:
+**Step 1. Add the JitPack repository to your build file**
 
-```groovy
-implementation 'com.yanzhenjie:permission:2.0.3'
+**Add it in your root build.gradle at the end of repositories:**
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 
-AndPermission requires at minimum Android 4.0(Api level 14) .
+**Step 2. Add the dependency**
+
+```xml
+dependencies {
+	        implementation 'com.github.Grekit-Sun:AndPermission:2.0.3'
+	}
+```
 
 ## Contributing
 Before submitting pull requests, contributors must abide by the [agreement](CONTRIBUTING.md) .
